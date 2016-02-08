@@ -23,7 +23,7 @@ h1, h1 a {
 	font-size: 31px;
 	text-align:center;
 	margin: 0;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Overlock', cursive, 'Georgia', Times, Times New Roman, serif;
 	text-decoration:none;
 }
 
@@ -112,6 +112,7 @@ div.content p {
 	margin-top: -7px;
 	margin-bottom: 26px;
 	font-size: 16px;
+	text-align: justify;
 }
 
 
@@ -161,7 +162,7 @@ div.footer p {
 
 /* Profile */
 img.profile-image {
-	width: 200px;
+	width: 300px;
 	float: left;
 	margin: 0 10px 2px 0;
 	border: 1px solid #ddd;
@@ -229,6 +230,10 @@ div.project-banner a:hover {
 	color: #ddd;
 }
 
+div.project img {
+	width: 289px;
+}
+
 div.project img:hover {
 	opacity: 0.8;
 }
@@ -278,4 +283,232 @@ html, body {
 	height: 0;
 	clear: both;
 }
- 
+
+/* MOBILE RESPONSIVENESS */
+
+/* Small Screens */
+
+
+@media screen and (max-width: 980px) {
+
+	/* navbar */
+	#menu {
+		margin-left: 505px;
+	}
+
+	/* general */
+	.container {
+		width: 769px;
+		margin: 0 auto;
+	}
+
+	/* content */
+	div.content {
+		width: 54%;
+		margin: 20px 41px 20px 0;
+		padding: 0 20px 20px 20px;
+		float: left;
+	}
+
+	/* sidebar */
+	div.sidebar {
+		width: 228px;
+		border: 1px solid #ddd;
+		background-color: #fff;
+		margin-top: 20px;
+		padding: 20px;
+		float: left;
+	}
+
+	/*INDIVIDUAL PAGES*/
+
+	/* profile */
+	img.profile-image {
+		width: 413px;
+		float: none;
+		margin: 0 0 20px 0;
+		border: 1px solid #ddd;
+	}
+
+	/* contact */
+	div.content input, div.content textarea {
+		margin-bottom: 10px;
+		width: 403px;
+		max-width: 403px;
+		padding: 5px;
+		font-size: 16px;
+		border: 1px solid #ddd;
+	}
+
+	div.content textarea {
+		height: 200px;
+	}
+
+	div.project img {
+		width: 289px;
+	}
+
+	/* portfolio */
+	div.project img {
+		width: 415px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	/* navbar */
+	#menu {
+		margin-left: 490px;
+	}
+	
+	/* general */
+	.container {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+	/* content */
+	div.content {
+		width: 688px;
+		margin: 20px;
+		padding: 0 20px 20px 20px;
+		float: left;
+	}
+
+	/* sidebar */
+	div.sidebar {
+		width: 688px;
+		border: 1px solid #ddd;
+		background-color: #fff;
+		margin: 20px;
+		padding: 20px;
+		float: left;
+	}
+
+	div.sidebar img#github {
+		margin-left:231px
+	}
+
+	/*INDIVIDUAL PAGES*/
+
+	/* profile */
+	img.profile-image {
+		width: 300px;
+		float: left;
+		margin: 0 20px 2px 0;
+		border: 1px solid #ddd;
+	}
+
+	/* contact */
+	div.content input, div.content textarea {
+		margin-bottom: 10px;
+		width: 678px;
+		max-width: 678px;
+		padding: 5px;
+		font-size: 16px;
+		border: 1px solid #ddd;
+	}
+
+	div.content textarea {
+		height: 200px;
+	}
+
+	/* portfolio */
+		div.project img {
+			width: 329px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	/* navbar */
+
+	header {
+		background-color: #fff;
+		border-bottom: 2px solid #ddd;
+		height: 129px
+	}
+
+	#name {
+		float: none;
+	}
+
+	#menu {
+		margin: 0;
+		padding: 20px 0 20px 0;
+		width:100%
+	}
+
+	#menu a {
+		text-decoration: none;
+		font-size: 18px;
+		color: #777;
+		padding: 0 75px 0 75px;
+		border-right: 1px solid #ddd;
+	}
+
+	#menu a:last-child {
+		padding: 0 0 0 75px;
+		border-right: 0;
+	}
+	
+	/* general */
+	.container {
+		width: 641px;
+		margin: 0 auto;
+	}
+
+	/* content */
+	div.content {
+		width: 561px;
+		margin: 20px;
+		padding: 0 20px 20px 20px;
+		float: left;
+	}
+
+	/* sidebar */
+	div.sidebar {
+		width: 561px;
+		border: 1px solid #ddd;
+		background-color: #fff;
+		margin: 20px;
+		padding: 20px;
+		float: left;
+	}
+
+	div.sidebar img#github {
+		margin-left:167px
+	}
+
+	/*INDIVIDUAL PAGES*/
+
+	/* profile */
+	img.profile-image {
+		width: 558px;
+		float: none;
+		margin: 0 0 20px 0;
+		border: 1px solid #ddd;
+	}
+
+	/* contact */
+	div.content input, div.content textarea {
+		margin-bottom: 10px;
+		width: 548px;
+		max-width: 548px;
+		padding: 5px;
+		font-size: 16px;
+		border: 1px solid #ddd;
+	}
+
+	div.content textarea {
+		height: 200px;
+	}
+
+	/* portfolio */
+	div.project img {
+		width: 560px;
+	}
+}
+
